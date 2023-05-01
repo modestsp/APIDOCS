@@ -10,7 +10,7 @@ fetch('http://localhost:3000/users/1')
     .then(json => console.log(json))
 `
 
-export const getFavorites = `
+export const getFavoritesRequest = `
 fetch('http://localhost:3000/users/1/favorites')
     .then(res => res.json())
     .then(json => console.log(json))
