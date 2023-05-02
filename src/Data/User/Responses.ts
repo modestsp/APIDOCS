@@ -44,9 +44,13 @@ export const getFavoritesResponse = `
     "product": {
       "id": 1,
       "name": "Love Disorder blue",
-      "description": "Love Disorder blue is a beautiful blue hat that you can wear ",
-      "url": "https://images.unsplash.com/photo-1620231109648-302d034cb29b?ixlib=
-      rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "description": "Love Disorder blue is a beautiful
+       blue hat that you can wear ",
+      "url": "https://images.unsplash.com/photo-
+      1620231109648-302d034cb29b?ixlib=
+      rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfH
+      x8fGVufDB8fHx8&auto=format&fit
+      =crop&w=1170&q=80",
       "price": 20,
       "stars": 5,
       "photographerUrl": "https://unsplash.com/es/@lovedisorder",
