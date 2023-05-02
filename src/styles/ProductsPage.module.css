@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.methodsMenu {
+    display: flex;
+    flex-direction: column;
+}

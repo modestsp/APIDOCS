@@ -1,0 +1,47 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 700px;
+    /* width: clamp(300px, 500px, 900px); */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(23, 19, 54, 0.685);
+    padding: 0.8rem;
+    color: white;
+}
+
+.copyContainer {
+    display: flex;
+    align-items: center;
+
+}
+
+.copyButton {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.copyIcon {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .mainContainer {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .mainContainer {
+        width: 300px;
+        background-color: black;
+    }
+}
