@@ -1,5 +1,10 @@
 :root {
   --fontRegular: 'RobotoRegular', sans-serif;
+  --fontItalic: 'RobotoItalic', sans-serif;
+  --fontBold: 'RobotoBold', sans-serif;
+  --primaryColor: #fff;
+  --secondaryColor: #4a4e69;
+  --tertiaryColor: #9a8c98;
 }
 
 * {
