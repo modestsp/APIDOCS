@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   font-family: var(--fontRegular);
-  padding: 0 8% 0 8%;
+  /* padding: 0 15rem 0 15rem; */
 }
 
 .container {
@@ -22,7 +22,10 @@
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--tertiaryColor);
-  padding: 1rem 0 1rem 0;
+
+  padding: 1rem 5% 1rem 5%;
+  /* padding: 1rem 0 1rem 0; */
+  /* width: 100%; */
 }
 
 .header ul {
@@ -37,7 +40,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   gap: 1rem;
   min-height: 100%;
   position: sticky;
@@ -52,25 +55,37 @@
   align-self: flex-start;
   font-size: 1.5rem;
   color: var(--primaryColor);
-  font-weight: 900;
+  font-weight: 500;
+  align-self: flex-start;
+  /* display: none; */
 }
 
 .sidebar a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   align-self: flex-end;
   font-weight: 500;
-  color: gainsboro;
+  color: rgba(220, 220, 220, 0.753);
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 0 0.25rem 0 0.25rem;
+}
+
+.sidebar a:hover {
+  background-color: rgba(128, 128, 128, 0.575);
+  color: white;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 2rem;
   border-top: 1px solid var(--tertiaryColor);
-  padding: 1rem;
-  color: var(--mainColor);
+  padding: 1.5rem;
+  color: var(--primaryColor);
   font-size: 1.1rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .dropMenu {
@@ -118,6 +133,10 @@
     display: none;
   }
 
+  .header ul {
+    gap: 1rem;
+  }
+
   .dropMenu {
     display: flex;
   }
@@ -134,14 +153,7 @@
     display: none;
   } */
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--primaryColor);
-    padding: 1rem 0 1rem 0;
-    color: var(--primaryColor);
-  }
+  .header {}
 
   .header ul {
     list-style: none;
@@ -157,12 +169,18 @@
   } */
 }
 
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 1501px) and (max-width: 1800px) {
   .main {
-    padding: 0 15rem 0 15rem;
+    padding: 0 10rem 0 10rem;
   }
 
   .sidebar {
-    margin-right: 4%;
+    /* margin-right: 4%; */
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  .main {
+    padding: 0 16rem 0 16rem;
   }
 }

@@ -1,13 +1,72 @@
-.DocsPage {
-  background-color: antiquewhite;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  font-family: var(--fontRegular);
+  flex: 1;
+  margin-top: 0.75rem;
+  /* background-color: rgb(74, 133, 185); */
 }
 
-.mainContent {
+.sectionContainer {
   display: flex;
+  flex-direction: column;
+  width: clamp(350px, 30vw, 600px);
+}
+
+.docsTitle {
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.modelTitle {
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+
+.methodsMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 1rem;
+  color: gainsboro;
+  align-items: end;
+  font-family: var(--fontItalic);
+  font-size: 1.1rem;
+  position: sticky;
+  top: 110px;
+  height: 79vh;
+  z-index: 999;
+}
+
+.methodsMenu a {
+  transition: all 0.15s ease-in-out;
+}
+
+.methodsMenu a:hover {
+  cursor: pointer;
+  color: var(--primaryColor);
+  font-weight: 700;
+  transition: all 0.1s ease-in-out;
+}
+
+.methodsMenuTitle {
+  font-size: 1.4rem;
+  font-family: var(--fontRegular);
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 1200px) {
+  .methodsMenu {
+    display: none;
+  }
+
+  .docsTitle {
+    margin-left: 2rem;
+  }
+
+  .sectionContainer {
+    width: 100%;
+    align-items: center;
+  }
 }
