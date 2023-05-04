@@ -50,11 +50,13 @@
 }
 
 .methodsMenuTitle {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: var(--fontRegular);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--primaryColor);
 }
+
+
 
 @media only screen and (max-width: 1200px) {
   .methodsMenu {
