@@ -21,7 +21,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid var(--tertiaryColor);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.25);
 
   padding: 1rem 5% 1rem 5%;
   /* padding: 1rem 0 1rem 0; */
@@ -40,7 +40,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   gap: 1rem;
   min-height: 100%;
   position: sticky;
@@ -53,10 +53,9 @@
 
 .sidebarTitle {
   align-self: flex-start;
-  font-size: 1.5rem;
-  color: var(--primaryColor);
+  font-size: 1.2rem;
+  color: rgba(220, 220, 220, 0.678);
   font-weight: 500;
-  align-self: flex-start;
   /* display: none; */
 }
 
@@ -68,21 +67,20 @@
   color: rgba(220, 220, 220, 0.753);
   border-radius: 0.25rem;
   width: 100%;
-  padding: 0 0.25rem 0 0.25rem;
+  padding: 0 0.25rem 0 1rem;
 }
 
-.sidebar a:hover {
-  background-color: rgba(128, 128, 128, 0.575);
-  color: white;
-}
+
 
 .footer {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  /* border */
   border-top: 1px solid var(--tertiaryColor);
   padding: 1.5rem;
   color: var(--primaryColor);
+  font-family: var(--OpenSansLight);
   font-size: 1.1rem;
   align-items: center;
   gap: 0.5rem;
@@ -90,10 +88,65 @@
 
 .dropMenu {
   display: none;
-  min-height: 2rem;
+  flex-direction: column;
+  /* background-color: beige; */
+  background-color: var(--secondaryColor);
+  z-index: 999;
+  position: sticky;
+  top: 90px;
+  /* border-bottom: 1px solid var(--tertiaryColor); */
+  border-top: 1px solid rgba(220, 220, 220, 0.25);
+  /* border-top: 1px solid var(--tertiaryColor); */
+  border-bottom: 1px solid rgba(220, 220, 220, 0.25);
+}
+
+.dropMenuTitle {
+  display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--mainColor);
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.25);
+  /* border-bottom: 1px solid var(--tertiaryColor); */
+  cursor: pointer;
+}
+
+.dropMenuTitle:hover {
+  background-color: var(--tertiaryColor);
+}
+
+.dropMenu span {
+  font-size: 1.25rem;
+  color: var(--primaryColor);
+  margin-left: 0.25rem;
+}
+
+.openMenu {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-family: var(--OpenSansBold);
+  color: var(--primaryColor);
+
+  border-bottom: 1px solid rgba(220, 220, 220, 0.25);
+  gap: 0.25rem;
+  transition: all 0.15s ease;
+}
+
+.openMenu li {
+  padding: 0 1.25rem;
+  cursor: pointer;
+}
+
+.dropMenu ul li:hover {
+  background-color: var(--tertiaryColor);
+}
+
+.closeMenu {
+  display: block;
+  width: 0;
+  height: 0;
+  border: none;
+  opacity: 0;
 }
 
 .ArrowIcon {
@@ -103,34 +156,13 @@
   margin-right: 0.3rem;
 }
 
-.dropMenu select {
-  appearance: none;
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  font-family: var(--fontBold);
-  flex: 1;
-  outline: none;
-  color: var(--mainColor);
-}
-
-.dropMenu select:active {
-  background-color: black;
-}
-
-.dropMenu select:focus {
-  background-color: black;
-}
-
-.dropMenu option {
-  background: none;
-  border: none;
-}
-
-
 @media only screen and (max-width: 660px) {
   .sidebar {
     display: none;
+  }
+
+  .header {
+    border: none;
   }
 
   .header ul {
@@ -153,13 +185,15 @@
     display: none;
   } */
 
-  .header {}
+  /* .header {
+    display: flex;
+    gap: 4rem;
+  } */
 
   .header ul {
     list-style: none;
     display: flex;
-    gap: 0.5rem;
-    font-size: 1.3rem;
+    gap: 2rem;
     align-self: flex-end;
     margin-right: 0.75rem;
   }
