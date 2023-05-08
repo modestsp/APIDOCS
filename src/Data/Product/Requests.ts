@@ -1,22 +1,22 @@
 const url = import.meta.env.VITE_REACT_API_URL;
 
 export const getProductsRequest = `
-fetch('http://localhost:3000/products') // 1 <= id <= 64
+fetch('https://mockclothesapi.onrender.com/products') // 1 <= id <= 64
     .then(res => res.json())
     .then(json => console.log(json))
 `
 export const getProductByIdRequest = `
-fetch('http://localhost:3000/products/1')
+fetch('https://mockclothesapi.onrender.com/products/1')
     .then(res => res.json())
     .then(json => console.log(json))
 `
 export const getReviewsRequest = `
-fetch('http://localhost:3000/products/1/reviews')
+fetch('https://mockclothesapi.onrender.com/products/1/reviews')
     .then(res => res.json())
     .then(json => console.log(json))
 `
 export const addProductToFavoritesRequest = `
-fetch('http://localhost:3000/products/1/favorites', {
+fetch('https://mockclothesapi.onrender.com/products/1/favorites', {
     method: "POST",
     body: JSON.stringify(
         {
@@ -28,7 +28,7 @@ fetch('http://localhost:3000/products/1/favorites', {
     .then(json => console.log(json))`
 
 export const createProductRequest = `
-fetch('http://localhost:3000/products',{
+fetch('https://mockclothesapi.onrender.com/products',{
             method:"POST",
             body:JSON.stringify(
                 {
@@ -47,7 +47,7 @@ fetch('http://localhost:3000/products',{
             .then(json=>console.log(json))
 `
 export const addReviewToProductRequest = `
-fetch('http://localhost:3000/products/1/reviews',{
+fetch('https://mockclothesapi.onrender.com/products/1/reviews',{
             method:"POST",
             body:JSON.stringify(
                 {
@@ -61,7 +61,7 @@ fetch('http://localhost:3000/products/1/reviews',{
             .then(json=>console.log(json))
 `
 export const updateProductRequest = `
-fetch('http://localhost:3000/products/1',{
+fetch('https://mockclothesapi.onrender.com/products/1',{
             method:"PUT",
             body:JSON.stringify(
                 {
@@ -80,7 +80,7 @@ fetch('http://localhost:3000/products/1',{
             .then(json=>console.log(json))
 `
 export const deleteProductRequest = `
-fetch('http://localhost:3000/products/1/',{
+fetch('https://mockclothesapi.onrender.com/products/1/',{
     method:"DELETE"
     })
     .then(res => res.json())

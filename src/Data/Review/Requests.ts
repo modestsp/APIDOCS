@@ -1,17 +1,17 @@
 export const getReviewsRequest = `
-fetch('http://localhost:3000/reviews')     
+fetch('https://mockclothesapi.onrender.com/reviews')     
     .then(res => res.json())
     .then(json => console.log(json))
 `
 
 export const getReviewByIdRequest = `
-fetch('http://localhost:3000/reviews/1') // 1 <= id <= 100
+fetch('https://mockclothesapi.onrender.com/reviews/1') // 1 <= id <= 100
     .then(res => res.json())
     .then(json => console.log(json))
 `
 
 // export const createReviewRequest = `
-// fetch('http://localhost:3000/reviews',{
+// fetch('https://mockclothesapi.onrender.com/reviews',{
 //             method:"POST",
 //             body:JSON.stringify(
 //                 {
@@ -24,7 +24,7 @@ fetch('http://localhost:3000/reviews/1') // 1 <= id <= 100
 // `
 
 export const updateReviewRequest = `
-fetch('http://localhost:3000/reviews/1',{
+fetch('https://mockclothesapi.onrender.com/reviews/1',{
             method:"PUT",
             body:JSON.stringify(
                 {
@@ -41,7 +41,7 @@ fetch('http://localhost:3000/reviews/1',{
 
 
 export const deleteReviewRequest = `
-fetch('http://localhost:3000/reviews/1/',{
+fetch('https://mockclothesapi.onrender.com/reviews/1/',{
     method:"DELETE"
     })
     .then(res => res.json())

@@ -1,23 +1,23 @@
 export const getCategoriesRequest = `
-fetch('http://localhost:3000/categories') // 1 <= id <= 4
+fetch('https://mockclothesapi.onrender.com/categories') // 1 <= id <= 4
     .then(res => res.json())
     .then(json => console.log(json))
 `
 
 export const getCategoryByIdRequest = `
-fetch('http://localhost:3000/categories/1')
+fetch('https://mockclothesapi.onrender.com/categories/1')
     .then(res => res.json())
     .then(json => console.log(json))
 `
 
 export const getProductsRequest = `
-fetch('http://localhost:3000/categories/1/products')
+fetch('https://mockclothesapi.onrender.com/categories/1/products')
     .then(res => res.json())
     .then(json => console.log(json))
 `
 
 export const createCategoryRequest = `
-fetch('http://localhost:3000/categories',{
+fetch('https://mockclothesapi.onrender.com/categories',{
             method:"POST",
             body:JSON.stringify(
                 {
@@ -30,7 +30,7 @@ fetch('http://localhost:3000/categories',{
 `
 
 export const updateCategoryRequest = `
-fetch('http://localhost:3000/categories/1',{
+fetch('https://mockclothesapi.onrender.com/categories/1',{
             method:"PUT",
             body:JSON.stringify(
                 {
@@ -44,7 +44,7 @@ fetch('http://localhost:3000/categories/1',{
 
 
 export const deleteCategoryRequest = `
-fetch('http://localhost:3000/categories/1/',{
+fetch('https://mockclothesapi.onrender.com/categories/1/',{
     method:"DELETE"
     })
     .then(res => res.json())
