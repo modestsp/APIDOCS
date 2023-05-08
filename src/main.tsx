@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,11 +10,14 @@ import Users from './pages/Users.tsx';
 import Products from './pages/Products.tsx';
 import Categories from './pages/Category.tsx';
 import Reviews from './pages/Reviews.tsx';
+import Home from './pages/Home.tsx';
+import ErrorPage from './pages/ErrorPage.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout><App /></Layout>
+    element: <Home />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/users",
