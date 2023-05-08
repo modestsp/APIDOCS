@@ -37,6 +37,10 @@
   color: var(--primaryColor);
 }
 
+.headerLink {
+  color: var(--primaryColor);
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
