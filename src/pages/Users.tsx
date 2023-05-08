@@ -5,7 +5,6 @@ import Section from '../Components/Section'
 
 import { createUserRequest, deleteFavoritesRequest, deleteUserRequest, getFavoritesRequest, getReviewsRequest, getUserByIdRequest, getUsersRequest, updateUserRequest } from '../Data/User/Requests'
 import { createUserResponse, deleteFavoriteResponse, deleteUserResponse, getFavoritesResponse, getReviewsResponse, getUserByIdResponse, getUsersResponse, updateUserResponse } from '../Data/User/Responses'
-import { useEffect } from 'react'
 
 const userModel = `
  interface User {
@@ -21,11 +20,6 @@ const userModel = `
 
 
 const Users = () => {
-  useEffect(() => {
-    fetch("https://dockertest-production-4be9.up.railway.app/weatherforecast")
-      .then(res => res.json())
-      .then(data => console.log(data))
-  })
   return (
     <div className={styles.container}>
       <div className={styles.sectionContainer}>
