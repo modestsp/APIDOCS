@@ -1,5 +1,5 @@
 export const getCategoriesRequest = `
-fetch('http://localhost:3000/categories')
+fetch('http://localhost:3000/categories') // 1 <= id <= 4
     .then(res => res.json())
     .then(json => console.log(json))
 `

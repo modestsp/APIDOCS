@@ -1,7 +1,7 @@
 const url = import.meta.env.VITE_REACT_API_URL;
 
 export const getProductsRequest = `
-fetch('http://localhost:3000/products')
+fetch('http://localhost:3000/products') // 1 <= id <= 64
     .then(res => res.json())
     .then(json => console.log(json))
 `

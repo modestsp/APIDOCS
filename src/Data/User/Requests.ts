@@ -5,7 +5,7 @@ fetch('http://localhost:3000/users')
 `
 
 export const getUserByIdRequest = `
-fetch('http://localhost:3000/users/1')
+fetch('http://localhost:3000/users/1') // 1 <= id <= 30
     .then(res => res.json())
     .then(json => console.log(json))
 `

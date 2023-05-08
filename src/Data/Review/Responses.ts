@@ -30,7 +30,8 @@ export const getReviewsResponse = `
 export const getReviewByIdResponse = `
 {
   "id": 1,
-  "content": "magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque",
+  "content": "magnis dis parturient montes nascetur ridiculus mus etiam
+   vel augue vestibulum rutrum rutrum neque",
   "rating": 4.9,
   "userId": 1,
   "user": null,

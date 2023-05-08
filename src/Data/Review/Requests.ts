@@ -1,11 +1,11 @@
 export const getReviewsRequest = `
-fetch('http://localhost:3000/reviews')
+fetch('http://localhost:3000/reviews')     
     .then(res => res.json())
     .then(json => console.log(json))
 `
 
 export const getReviewByIdRequest = `
-fetch('http://localhost:3000/reviews/1')
+fetch('http://localhost:3000/reviews/1') // 1 <= id <= 100
     .then(res => res.json())
     .then(json => console.log(json))
 `
