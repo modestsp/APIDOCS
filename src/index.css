@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,700;1,800&display=swap');
+
 :root {
-  --fontRegular: 'RobotoRegular', sans-serif;
-  --fontItalic: 'RobotoItalic', sans-serif;
-  --fontBold: 'RobotoBold', sans-serif;
+  --fontRegular: 'OpenSansRegular', sans-serif;
+  --fontItalic: 'OpenSansItalic', sans-serif;
+  --fontBold: 'OpenSansBold', sans-serif;
+  --testRegular: 'Open Sans', sans-serif;
   --primaryColor: #fff;
   --secondaryColor: #4a4e69;
   --tertiaryColor: #9a8c98;
@@ -12,19 +15,32 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Fonts */
 
 @font-face {
-  font-family: 'RobotoRegular';
-  src: url('/src/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: 'OpenSansRegular';
+  src: url('/src/assets/fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'RobotoItalic';
-  src: url('/src/assets/fonts/Roboto-Italic.ttf') format('truetype');
+  font-family: 'OpenSansLight';
+  src: url('/src/assets/fonts/OpenSans-Light.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'RobotoBold';
-  src: url('/src/assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-family: 'OpenSansItalic';
+  src: url('/src/assets/fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('/src/assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
