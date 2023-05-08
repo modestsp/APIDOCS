@@ -11,7 +11,7 @@ const Home = () => {
                 <ul>
                     <Link className={styles.headerLink} to="/users">Docs</Link>
                     {/* <li>Docs</li> */}
-                    <Link className={styles.headerLink} to="https://github.com/srsebbi/MockClothesCommerceAPI">
+                    <Link className={styles.headerLink} to="https://github.com/modestsp/MockClothesCommerceAPI">
                         <AiFillGithub />
                     </Link>
                 </ul>
