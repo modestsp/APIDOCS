@@ -2,7 +2,7 @@ import styles from '../styles/DocsPage.module.css'
 import { Link as ScrollLink } from 'react-scroll'
 import DisplayCode from '../Components/DisplayCode'
 import Section from '../Components/Section'
-import { deleteReviewRequest, getReviewByIdRequest, updateReviewRequest } from '../Data/Review/Requests'
+import { deleteReviewRequest, getReviewByIdRequest, getReviewsRequest, updateReviewRequest } from '../Data/Review/Requests'
 import { deleteReviewResponse, getReviewByIdResponse, getReviewsResponse, updateReviewResponse } from '../Data/Review/Responses'
 
 const reviewModel = `
@@ -28,9 +28,9 @@ const Reviews = () => {
                 <h2 className={styles.modelTitle} >Model</h2>
                 <DisplayCode code={reviewModel} lang='typescript' />
 
-                <Section title="Get reviews" request={getReviewByIdRequest} response={getReviewsResponse} id='get-reviews' lang='javascript' />
+                <Section title="Get reviews" request={getReviewsRequest} response={getReviewsResponse} id='get-reviews' lang='javascript' />
 
-                <Section title="Get reviews by id" request={getReviewByIdRequest} response={getReviewByIdResponse} id='get-review' lang='javascript' aditionalContent={`1 <= categoryId <= 30`} />
+                <Section title="Get reviews by id" request={getReviewByIdRequest} response={getReviewByIdResponse} id='get-review' lang='javascript' />
 
                 <Section title="Update review" request={updateReviewRequest} response={updateReviewResponse} id='update-review' lang='javascript' />
 

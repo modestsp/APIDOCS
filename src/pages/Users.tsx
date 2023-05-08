@@ -3,8 +3,9 @@ import { Link as ScrollLink } from 'react-scroll'
 import DisplayCode from '../Components/DisplayCode'
 import Section from '../Components/Section'
 
-import { createUserRequest, deleteFavoritesRequest, deleteUserRequest, getFavoritesRequest, getReviewsRequest, getUserByIdRequest, updateUserRequest } from '../Data/User/Requests'
-import { createUserResponse, deleteFavoriteResponse, deleteUserResponse, getFavoritesResponse, getReviewsResponse, getUserByIdResponse, updateUserResponse } from '../Data/User/Responses'
+import { createUserRequest, deleteFavoritesRequest, deleteUserRequest, getFavoritesRequest, getReviewsRequest, getUserByIdRequest, getUsersRequest, updateUserRequest } from '../Data/User/Requests'
+import { createUserResponse, deleteFavoriteResponse, deleteUserResponse, getFavoritesResponse, getReviewsResponse, getUserByIdResponse, getUsersResponse, updateUserResponse } from '../Data/User/Responses'
+import { useEffect } from 'react'
 
 const userModel = `
  interface User {
@@ -20,6 +21,11 @@ const userModel = `
 
 
 const Users = () => {
+  useEffect(() => {
+    fetch("https://dockertest-production-4be9.up.railway.app/weatherforecast")
+      .then(res => res.json())
+      .then(data => console.log(data))
+  })
   return (
     <div className={styles.container}>
       <div className={styles.sectionContainer}>
@@ -28,9 +34,9 @@ const Users = () => {
 
         <DisplayCode code={userModel} lang='typescript' />
 
-        <Section title="Get users" request={getUserByIdRequest} response={getUserByIdResponse} id='get-users' lang='javascript' />
+        <Section title="Get users" request={getUsersRequest} response={getUsersResponse} id='get-users' lang='javascript' />
 
-        <Section title="Get user by id" request={getUserByIdRequest} response={getUserByIdResponse} id='get-user' lang='javascript' aditionalContent={`1 <= userId <= 30`} />
+        <Section title="Get user by id" request={getUserByIdRequest} response={getUserByIdResponse} id='get-user' lang='javascript' />
 
         <Section title="Get favorites" request={getFavoritesRequest} response={getFavoritesResponse} id='get-favorites' lang='javascript' />
 

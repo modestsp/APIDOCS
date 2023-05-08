@@ -26,7 +26,7 @@ const Categories = () => {
 
                 <Section title="Get categories" request={getCategoriesRequest} response={getCategoriesResponse} id='get-categories' lang='javascript' />
 
-                <Section title="Get category by id" request={getCategoryByIdRequest} response={getCategoryByIdResponse} id='get-category' lang='javascript' aditionalContent={`1 <= categoryId <= 30`} />
+                <Section title="Get category by id" request={getCategoryByIdRequest} response={getCategoryByIdResponse} id='get-category' lang='javascript' />
 
                 <Section title="Get products from a category" request={getProductsRequest} response={getProductsResponse} id='get-products' lang='javascript' />
 
