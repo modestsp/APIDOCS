@@ -5,11 +5,10 @@ function App() {
 
   return (
     <div className={styles.mainContent}>
-      {/* Hello: */}
     </div>
 
   );
 }
 
-// export default App
+export default App
 

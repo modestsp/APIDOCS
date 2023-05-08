@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter"
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs"
-import { BiCopy } from 'react-icons/bi'
 import { HiOutlineClipboardCopy } from 'react-icons/hi'
 import { MdOutlineDone } from 'react-icons/md'
 import styles from '../styles/DisplayCode.module.css'

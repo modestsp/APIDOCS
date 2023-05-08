@@ -1,5 +1,3 @@
-const url = import.meta.env.VITE_REACT_API_URL;
-
 export const getProductsRequest = `
 fetch('https://mockclothesapi.onrender.com/products') // 1 <= id <= 64
     .then(res => res.json())
