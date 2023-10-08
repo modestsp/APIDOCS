@@ -9,7 +9,7 @@ const Home = () => {
             <header className={styles.header}>
                 <img src={logo} alt="Logo" style={{ marginLeft: '10px' }} />
                 <ul>
-                    <Link className={styles.headerLink} to="/users">Docs</Link>
+                    <Link className={styles.headerLink} to="/docs/users">Docs</Link>
                     {/* <li>Docs</li> */}
                     <Link className={styles.headerLink} to="https://github.com/modestsp/MockClothesCommerceAPI">
                         <AiFillGithub />
@@ -20,7 +20,7 @@ const Home = () => {
                 <h1>Mock Clothes API</h1>
                 <p>Welcome to the mock clothes API! </p>
                 <p>The API provides access to products, users, categories, and reviews, so you can build your innovative e-commerce solution quickly and easily. With user-friendly documentation, you can integrate our API into your project and create a seamless shopping experience for your customers. Discover our endpoints today and achieve your business goals with ease.</p>
-                <Link to="/users" className={styles.btn}>Explore the API</Link>
+                <Link to="/docs/users" className={styles.btn}>Explore the API</Link>
             </section>
             <Footer />
         </main>

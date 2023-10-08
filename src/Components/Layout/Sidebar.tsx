@@ -8,16 +8,16 @@ const Sidebar = () => {
 
   useEffect(() => {
     switch (location.pathname) {
-      case '/users':
+      case '/docs/users':
         setSelected('user');
         break;
-      case '/products':
+      case '/docs/products':
         setSelected('product');
         break;
-      case '/categories':
+      case '/docs/categories':
         setSelected('category');
         break;
-      case '/reviews':
+      case '/docs/reviews':
         setSelected('review');
         break;
       default:
@@ -31,16 +31,16 @@ const Sidebar = () => {
       <p className={styles.sidebarTitle}>Section</p>
       <Link
         style={{ color: selected === "user" ? "white" : "gainsboro", backgroundColor: selected === "user" ? "rgba(128, 128, 128, 0.575)" : "transparent" }}
-        onClick={() => setSelected("user")} to={`/users`}>Users</Link>
+        onClick={() => setSelected("user")} to={`/docs/users`}>Users</Link>
       <Link
         onClick={() => setSelected("product")}
-        style={{ color: selected === "product" ? "white" : "gainsboro", backgroundColor: selected === "product" ? "rgba(128, 128, 128, 0.575)" : "transparent" }} to={`/products`}>Products</Link>
+        style={{ color: selected === "product" ? "white" : "gainsboro", backgroundColor: selected === "product" ? "rgba(128, 128, 128, 0.575)" : "transparent" }} to={`/docs/products`}>Products</Link>
       <Link
         onClick={() => setSelected("category")}
-        style={{ color: selected === "category" ? "white" : "gainsboro", backgroundColor: selected === "category" ? "rgba(128, 128, 128, 0.575)" : "transparent" }} to={`/categories`}>Categories</Link>
+        style={{ color: selected === "category" ? "white" : "gainsboro", backgroundColor: selected === "category" ? "rgba(128, 128, 128, 0.575)" : "transparent" }} to={`/docs/categories`}>Categories</Link>
       <Link
         onClick={() => setSelected("review")}
-        style={{ color: selected === "review" ? "white" : "gainsboro", backgroundColor: selected === "review" ? "rgba(128, 128, 128, 0.575)" : "transparent" }} to={`/reviews`}>Reviews</Link>
+        style={{ color: selected === "review" ? "white" : "gainsboro", backgroundColor: selected === "review" ? "rgba(128, 128, 128, 0.575)" : "transparent" }} to={`/docs/reviews`}>Reviews</Link>
     </aside>);
 }
 
