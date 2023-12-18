@@ -11,17 +11,17 @@ const DropMenu = () => {
 
     useEffect(() => {
         switch (location.pathname) {
-            case '/users':
-                setSelected('Users');
+            case '/docs/users':
+                setSelected('docs/users');
                 break;
-            case '/products':
-                setSelected('Products');
+            case '/docs/products':
+                setSelected('docs/products');
                 break;
-            case '/categories':
-                setSelected('Categories');
+            case '/docs/categories':
+                setSelected('docs/categories');
                 break;
-            case '/reviews':
-                setSelected('Reviews');
+            case '/docs/reviews':
+                setSelected('docs/reviews');
                 break;
             default:
                 setSelected('');
@@ -41,10 +41,10 @@ const DropMenu = () => {
                 {/* <p>{selected}</p> */}
             </div>
             <ul className={open ? styles.openMenu : styles.closeMenu}>
-                <li id="Users" onClick={handleSelected}>Users</li>
-                <li id="Products" onClick={handleSelected}>Products</li>
-                <li id="Categories" onClick={handleSelected}>Categories</li>
-                <li id="Reviews" onClick={handleSelected}>Reviews</li>
+                <li id="docs/users" onClick={handleSelected}>Users</li>
+                <li id="docs/products" onClick={handleSelected}>Products</li>
+                <li id="docs/categories" onClick={handleSelected}>Categories</li>
+                <li id="docs/reviews" onClick={handleSelected}>Reviews</li>
             </ul>
         </div>
     );

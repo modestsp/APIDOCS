@@ -43,7 +43,7 @@ export const getReviewByIdResponse = `
 `
 
 // export const createReviewResponse = `
-// fetch('https://mockclothesapi.com.ar/reviews',{
+// fetch('https://mockclothesapi.onrender.com/reviews',{
 //             method:"POST",
 //             body:JSON.stringify(
 //                 {

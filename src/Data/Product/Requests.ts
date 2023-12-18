@@ -1,20 +1,20 @@
 export const getProductsRequest = `
-fetch('https://mockclothesapi.com.ar/products') // 1 <= id <= 64
+fetch('https://mockclothesapi.onrender.com/products') // 1 <= id <= 64
     .then(res => res.json())
     .then(json => console.log(json))
 `
 export const getProductByIdRequest = `
-fetch('https://mockclothesapi.com.ar/products/1')
+fetch('https://mockclothesapi.onrender.com/products/1')
     .then(res => res.json())
     .then(json => console.log(json))
 `
 export const getReviewsRequest = `
-fetch('https://mockclothesapi.com.ar/products/1/reviews')
+fetch('https://mockclothesapi.onrender.com/products/1/reviews')
     .then(res => res.json())
     .then(json => console.log(json))
 `
 export const addProductToFavoritesRequest = `
-fetch('https://mockclothesapi.com.ar/products/1/favorites', {
+fetch('https://mockclothesapi.onrender.com/products/1/favorites', {
     method: "POST",
     body: JSON.stringify(
         {
@@ -26,7 +26,7 @@ fetch('https://mockclothesapi.com.ar/products/1/favorites', {
     .then(json => console.log(json))`
 
 export const createProductRequest = `
-fetch('https://mockclothesapi.com.ar/products',{
+fetch('https://mockclothesapi.onrender.com/products',{
             method:"POST",
             body:JSON.stringify(
                 {
@@ -45,7 +45,7 @@ fetch('https://mockclothesapi.com.ar/products',{
             .then(json=>console.log(json))
 `
 export const addReviewToProductRequest = `
-fetch('https://mockclothesapi.com.ar/products/1/reviews',{
+fetch('https://mockclothesapi.onrender.com/products/1/reviews',{
             method:"POST",
             body:JSON.stringify(
                 {
@@ -59,7 +59,7 @@ fetch('https://mockclothesapi.com.ar/products/1/reviews',{
             .then(json=>console.log(json))
 `
 export const updateProductRequest = `
-fetch('https://mockclothesapi.com.ar/products/1',{
+fetch('https://mockclothesapi.onrender.com/products/1',{
             method:"PUT",
             body:JSON.stringify(
                 {
@@ -78,7 +78,7 @@ fetch('https://mockclothesapi.com.ar/products/1',{
             .then(json=>console.log(json))
 `
 export const deleteProductRequest = `
-fetch('https://mockclothesapi.com.ar/products/1/',{
+fetch('https://mockclothesapi.onrender.com/products/1/',{
     method:"DELETE"
     })
     .then(res => res.json())
